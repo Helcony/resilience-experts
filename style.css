@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+:root {
+    --main-blue: #3D7DA6;
+    --main-gray: #D3D3D3;
+    --dark-gray: #4F4F4F;
+    --light-gray: #D3D3D3;
+    --orange: #D3823F;
+    --disabled: rgba(0, 0, 0, 0.603);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+*[readonly] {
+    user-select: none;
+    outline: 0;
+    color: var(--disabled);
+}
+
+*[disabled] {
+    color: var(--disabled);
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.hiddenAlert {
+    display: none;
+    visibility: hidden;
+}
+
+
+body {
+    background-color: var(--dark-gray);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    padding-bottom: 5rem;
+    color: var(--main-gray);
+}
+
+#container {
+    max-width: 35%;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.question {
+    margin-bottom: 2rem;
+}
+
+.alternatives {
+    background-color: var(--orange);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 2rem;
+    color: black;
+}
+
+input[type=radio] {
+    margin-bottom: 0;
+}
+
+input {
+    outline-style: none;
+    border: none;
+    background-color:var(--light-gray);
+    padding: 1rem;
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+    display: block;
+    margin-top: 1rem;
+}
+
+.input-title {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+button {
+    background-color: var(--main-blue);
+    border: none;
+    padding: .8rem;
+    border-radius: .6rem;
+}
+
+#chart-box {
+    height: 600px;
+    width: 600px;
+}
+
+#chart {
+    font-family: 'Poppins', sans-serif;
+    transform: scale(1.2);
+    user-select: none;
+}
+
+@media (max-width: 576px) {
+    #container {
+        max-width: 90%;
+    }
+
+    .alternatives {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .7rem;
+    }
+
+    #chart-box {
+        height: 350px;
+        width: 350px;
+    }
+    
+    #chart {
+        font-family: 'Poppins', sans-serif;
+        transform: scale(.7);
+        user-select: none;
+    }
+}
+
+@media (max-width: 1450px) {
+    #container {
+        max-width: 90%;
+    }
+}
