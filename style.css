@@ -122,9 +122,14 @@ button {
     border-radius: .6rem;
 }
 
+#result {
+    overflow-y: hidden;
+}
+
 #chart-box {
     height: 600px;
     width: 600px;
+    margin: 0;
 }
 
 #chart {
@@ -163,6 +168,7 @@ button {
     #chart-box {
         height: 400px;
         width: 400px;
+        margin: 0;
     }
     
     #chart {
