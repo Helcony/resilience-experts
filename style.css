@@ -54,11 +54,15 @@ body {
     max-width: 35%;
 }
 
+#logo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-block: 1rem;
+}
+
 #logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    width: 144px;
 }
 
 h1 {
@@ -120,6 +124,7 @@ button {
     border: none;
     padding: .8rem;
     border-radius: .6rem;
+    color: black;
 }
 
 #result {
@@ -130,6 +135,11 @@ button {
     height: 600px;
     width: 600px;
     margin: 0;
+}
+
+#charta {
+    display: flex;
+    justify-content: center;
 }
 
 #chart {
@@ -165,9 +175,15 @@ button {
         gap: .7rem;
     }
 
+    .alternative {
+        display: flex;
+        gap: .2rem;
+        align-items: center;
+    }
+
     #chart-box {
-        height: 400px;
-        width: 400px;
+        height: 370px;
+        width: 360px;
         margin: 0;
     }
     
