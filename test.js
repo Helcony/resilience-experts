@@ -247,10 +247,10 @@ function result() {
 }
 
 // exibe nome da empresa no modal
-function nome() {
-    let nomeEmpresa = document.querySelector('input[name="nomeEmpresa"]').value
-    document.getElementById("empresa").innerHTML = nomeEmpresa
-}
+//function nome() {
+//    let nomeEmpresa = document.querySelector('input[name="nomeEmpresa"]').value
+//    document.getElementById("empresa").innerHTML = nomeEmpresa
+//}
 
 // adiciona disabled/readonly depois de enviar forms
 function addReadOnlyAndDisable() {
@@ -267,7 +267,7 @@ function addReadOnlyAndDisable() {
 
 // chama as funções onSubmit()
 function submitFunctions() {
-    nome()
+//    nome()
     chart()
     addReadOnlyAndDisable()
     result()
